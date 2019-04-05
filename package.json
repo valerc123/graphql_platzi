@@ -1,0 +1,26 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js",
+    "db:migrate": "knex migrate:latest --knexfile=db/knexfile.js",
+    "db:seed": "knex seed:run --knexfile=db/knexfile.js"
+  },
+  "dependencies": {
+    "apollo-server": "2.4.8",
+    "apollo-server-express": "2.4.8",
+    "body-parser": "1.18.3",
+    "casual": "1.6.0",
+    "express": "4.16.4",
+    "graphql": "14.2.1",
+    "graphql-tools": "4.0.4",
+    "knex": "0.16.3",
+    "objection": "1.6.7",
+    "sqlite3": "4.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.10"
+  }
+}
